@@ -1,90 +1,22 @@
 const categorizedSkills = {
   language: {
     title: 'Programming Languages',
-    skills: [
-      'c',
-      'cplusplus',
-      'csharp',
-      'go',
-      'java',
-      'javascript',
-      'typescript',
-      'php',
-      'perl',
-      'ruby',
-      'scala',
-      'python',
-      'swift',
-      'objectivec',
-      'clojure',
-      'rust',
-      'haskell',
-      'coffeescript',
-      'elixir',
-      'erlang',
-      'nim',
-    ],
+    skills: ['c', 'cplusplus', 'csharp', 'go', 'java', 'javascript', 'typescript', 'php', 'perl', 'ruby', 'scala', 'python', 'swift', 'objectivec', 'clojure', 'rust', 'haskell', 'coffeescript', 'elixir', 'erlang', 'nim'],
   },
 
   frontend_dev: {
     title: 'Frontend Development',
-    skills: [
-      'vuejs',
-      'react',
-      'svelte',
-      'angularjs',
-      'angular',
-      'backbonejs',
-      'bootstrap',
-      'vuetify',
-      'css3',
-      'html5',
-      'pug',
-      'gulp',
-      'sass',
-      'redux',
-      'webpack',
-      'babel',
-      'tailwind',
-      'materialize',
-      'bulma',
-      'gtk',
-      'qt',
-      'wx_widgets',
-      'ember',
-    ],
+    skills: ['vuejs', 'react', 'svelte', 'angularjs', 'angular', 'backbonejs', 'bootstrap', 'vuetify', 'css3', 'html5', 'pug', 'gulp', 'sass', 'redux', 'webpack', 'babel', 'tailwind', 'materialize', 'bulma', 'gtk', 'qt', 'wx_widgets', 'ember'],
   },
 
   backend_dev: {
     title: 'Backend Development',
-    skills: [
-      'nodejs',
-      'spring',
-      'express',
-      'graphql',
-      'kafka',
-      'solr',
-      'rabbitMQ',
-      'hadoop',
-      'nginx',
-      'openresty',
-      'nestjs',
-    ],
+    skills: ['nodejs', 'spring', 'express', 'graphql', 'kafka', 'solr', 'rabbitMQ', 'hadoop', 'nginx', 'openresty', 'nestjs'],
   },
 
   mobile_dev: {
     title: 'Mobile App Development',
-    skills: [
-      'android',
-      'flutter',
-      'dart',
-      'kotlin',
-      'nativescript',
-      'xamarin',
-      'reactnative',
-      'ionic',
-      'apachecordova',
-    ],
+    skills: ['android', 'flutter', 'dart', 'kotlin', 'nativescript', 'xamarin', 'reactnative', 'ionic', 'apachecordova'],
   },
 
   ai: {
@@ -94,22 +26,7 @@ const categorizedSkills = {
 
   database: {
     title: 'Database',
-    skills: [
-      'mongodb',
-      'mysql',
-      'postgresql',
-      'redis',
-      'oracle',
-      'cassandra',
-      'couchdb',
-      'hive',
-      'realm',
-      'mariadb',
-      'cockroachdb',
-      'elasticsearch',
-      'sqlite',
-      'mssql',
-    ],
+    skills: ['mongodb', 'mysql', 'postgresql', 'redis', 'oracle', 'cassandra', 'couchdb', 'hive', 'realm', 'mariadb', 'cockroachdb', 'elasticsearch', 'sqlite', 'mssql'],
   },
 
   data_visualization: {
@@ -144,21 +61,7 @@ const categorizedSkills = {
 
   static_site_generator: {
     title: 'Static Site Generators',
-    skills: [
-      'gatsby',
-      'gridsome',
-      'hugo',
-      'jekyll',
-      'nextjs',
-      'nuxtjs',
-      '11ty',
-      'scully',
-      'sculpin',
-      'sapper',
-      'vuepress',
-      'hexo',
-      'middleman',
-    ],
+    skills: ['gatsby', 'gridsome', 'hugo', 'jekyll', 'nextjs', 'nuxtjs', '11ty', 'scully', 'sculpin', 'sapper', 'vuepress', 'hexo', 'middleman'],
   },
 
   game_engines: {
@@ -180,20 +83,16 @@ const categorizedSkills = {
 const icons = {
   vuejs: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg',
   react: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg',
-  angularjs:
-    'https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original-wordmark.svg',
+  angularjs: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original-wordmark.svg',
   angular: 'https://angular.io/assets/images/logos/angular/angular.svg',
-  aws:
-    'https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
+  aws: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
   android: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg',
   arduino: 'https://cdn.worldvectorlogo.com/logos/arduino-1.svg',
-  backbonejs:
-    'https://raw.githubusercontent.com/devicons/devicon/master/icons/backbonejs/backbonejs-original-wordmark.svg',
+  backbonejs: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/backbonejs/backbonejs-original-wordmark.svg',
   bootstrap: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg',
   c: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg',
   canvasjs: 'https://raw.githubusercontent.com/Hardik0307/Hardik0307/master/assets/canvasjs-charts.svg',
-  coffeescript:
-    'https://raw.githubusercontent.com/devicons/devicon/master/icons/coffeescript/coffeescript-original-wordmark.svg',
+  coffeescript: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/coffeescript/coffeescript-original-wordmark.svg',
   codeigniter: 'https://cdn.worldvectorlogo.com/logos/codeigniter.svg',
   cplusplus: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg',
   css3: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
@@ -225,8 +124,7 @@ const icons = {
   xd: 'https://cdn.worldvectorlogo.com/logos/adobe-xd.svg',
   php: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg',
   perl: 'https://api.iconify.design/logos-perl.svg',
-  postgresql:
-    'https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg',
+  postgresql: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg',
   python: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg',
   rails: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg',
   redis: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg',
@@ -241,8 +139,7 @@ const icons = {
   typescript: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg',
   linux: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg',
   redux: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg',
-  webpack:
-    'https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg',
+  webpack: 'https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg',
   flutter: 'https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg',
   dart: 'https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg',
   kotlin: 'https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg',
@@ -260,8 +157,7 @@ const icons = {
   hadoop: 'https://www.vectorlogo.zone/logos/apache_hadoop/apache_hadoop-icon.svg',
   bash: 'https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg',
   pytorch: 'https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg',
-  pandas:
-    'https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg',
+  pandas: 'https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg',
   seaborn: 'https://seaborn.pydata.org/_images/logo-mark-lightbg.svg',
   opencv: 'https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg',
   illustrator: 'https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg',
@@ -270,24 +166,19 @@ const icons = {
   babel: 'https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg',
   sketch: 'https://www.vectorlogo.zone/logos/sketchapp/sketchapp-icon.svg',
   flask: 'https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg',
-  nativescript:
-    'https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/nativescript.svg',
-  xamarin:
-    'https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/xamarin.svg',
+  nativescript: 'https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/nativescript.svg',
+  xamarin: 'https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/xamarin.svg',
   vagrant: 'https://www.vectorlogo.zone/logos/vagrantup/vagrantup-icon.svg',
   tailwind: 'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg',
-  materialize:
-    'https://raw.githubusercontent.com/prplx/svg-logos/5585531d45d294869c4eaab4d7cf2e9c167710a9/svg/materialize.svg',
+  materialize: 'https://raw.githubusercontent.com/prplx/svg-logos/5585531d45d294869c4eaab4d7cf2e9c167710a9/svg/materialize.svg',
   invision: 'https://www.vectorlogo.zone/logos/invisionapp/invisionapp-icon.svg',
   framer: 'https://www.vectorlogo.zone/logos/framer/framer-icon.svg',
   bulma: 'https://raw.githubusercontent.com/gilbarbara/logos/804dc257b59e144eaca5bc6ffd16949752c6f789/logos/bulma.svg',
-  couchdb:
-    'https://raw.githubusercontent.com/devicons/devicon/0d6c64dbbf311879f7d563bfc3ccf559f9ed111c/icons/couchdb/couchdb-original.svg',
+  couchdb: 'https://raw.githubusercontent.com/devicons/devicon/0d6c64dbbf311879f7d563bfc3ccf559f9ed111c/icons/couchdb/couchdb-original.svg',
   firebase: 'https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg',
   amplify: 'https://docs.amplify.aws/assets/logo-dark.svg',
   hive: 'https://www.vectorlogo.zone/logos/apache_hive/apache_hive-icon.svg',
-  realm:
-    'https://raw.githubusercontent.com/bestofjs/bestofjs-webui/8665e8c267a0215f3159df28b33c365198101df5/public/logos/realm.svg',
+  realm: 'https://raw.githubusercontent.com/bestofjs/bestofjs-webui/8665e8c267a0215f3159df28b33c365198101df5/public/logos/realm.svg',
   gatsby: 'https://www.vectorlogo.zone/logos/gatsbyjs/gatsbyjs-icon.svg',
   gridsome: 'https://www.vectorlogo.zone/logos/gridsome/gridsome-icon.svg',
   nuxtjs: 'https://www.vectorlogo.zone/logos/nuxtjs/nuxtjs-icon.svg',
@@ -304,10 +195,8 @@ const icons = {
   pug: 'https://cdn.worldvectorlogo.com/logos/pug.svg',
   mocha: 'https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg',
   jest: 'https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg',
-  cypress:
-    'https://raw.githubusercontent.com/simple-icons/simple-icons/6e46ec1fc23b60c8fd0d2f2ff46db82e16dbd75f/icons/cypress.svg',
-  selenium:
-    'https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg',
+  cypress: 'https://raw.githubusercontent.com/simple-icons/simple-icons/6e46ec1fc23b60c8fd0d2f2ff46db82e16dbd75f/icons/cypress.svg',
+  selenium: 'https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg',
   puppeteer: 'https://www.vectorlogo.zone/logos/pptrdev/pptrdev-official.svg',
   karma: 'https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/karma.svg',
   jasmine: 'https://www.vectorlogo.zone/logos/jasmine/jasmine-icon.svg',
@@ -322,16 +211,12 @@ const icons = {
   elasticsearch: 'https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg',
   circleci: 'https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg',
   scully: 'https://raw.githubusercontent.com/scullyio/scully/main/assets/logos/SVG/scullyio-icon.svg',
-  '11ty':
-    'https://gist.githubusercontent.com/vivek32ta/c7f7bf583c1fb1c58d89301ea40f37fd/raw/f4c85cce5790758286b8f155ef9a177710b995df/11ty.svg',
-  sculpin:
-    'https://gist.githubusercontent.com/vivek32ta/c7f7bf583c1fb1c58d89301ea40f37fd/raw/1782aef8672484698c0dd407f900c4a329ed5bc4/sculpin.svg',
+  '11ty': 'https://gist.githubusercontent.com/vivek32ta/c7f7bf583c1fb1c58d89301ea40f37fd/raw/f4c85cce5790758286b8f155ef9a177710b995df/11ty.svg',
+  sculpin: 'https://gist.githubusercontent.com/vivek32ta/c7f7bf583c1fb1c58d89301ea40f37fd/raw/1782aef8672484698c0dd407f900c4a329ed5bc4/sculpin.svg',
   sapper: 'https://raw.githubusercontent.com/bestofjs/bestofjs-webui/master/public/logos/sapper.svg',
-  vuepress:
-    'https://raw.githubusercontent.com/AliasIO/wappalyzer/master/src/drivers/webextension/images/icons/VuePress.svg',
+  vuepress: 'https://raw.githubusercontent.com/AliasIO/wappalyzer/master/src/drivers/webextension/images/icons/VuePress.svg',
   unity: 'https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg',
-  unreal:
-    'https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg',
+  unreal: 'https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg',
   elixir: 'https://www.vectorlogo.zone/logos/elixir-lang/elixir-lang-icon.svg',
   heroku: 'https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg',
   appwrite: 'https://www.vectorlogo.zone/logos/appwriteio/appwriteio-icon.svg',
@@ -345,8 +230,7 @@ const icons = {
   nim: 'https://www.vectorlogo.zone/logos/nim-lang/nim-lang-icon.svg',
   sqlite: 'https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg',
   mssql: 'https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg',
-  middleman:
-    'https://raw.githubusercontent.com/leungwensen/svg-icon/b84b3f3a3da329b7c1d02346865f8e98beb05413/dist/svg/logos/middleman.svg',
+  middleman: 'https://raw.githubusercontent.com/leungwensen/svg-icon/b84b3f3a3da329b7c1d02346865f8e98beb05413/dist/svg/logos/middleman.svg',
   matlab: 'https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png',
 };
 
@@ -458,8 +342,7 @@ const skillWebsites = {
   reactnative: 'https://reactnative.dev/',
   mariadb: 'https://mariadb.org/',
   cockroachdb: 'https://www.cockroachlabs.com/product/cockroachdb/',
-  objectivec:
-    'https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html',
+  objectivec: 'https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html',
   clojure: 'https://clojure.org/',
   haskell: 'https://www.haskell.org/',
   svelte: 'https://svelte.dev',

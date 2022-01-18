@@ -1,21 +1,7 @@
 import React from 'react';
 import { shallow, configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import MarkdownPreview, {
-  GithubProfileTrophyPreview,
-  GitHubStatsPreview,
-  SkillsPreview,
-  SocialPreview,
-  SubTitlePreview,
-  TitlePreview,
-  TopLanguagesPreview,
-  TwitterBadgePreview,
-  VisitorsBadgePreview,
-  WorkPreview,
-  SectionTitle,
-  DisplayWork,
-  DisplaySocial,
-} from '../markdownPreview';
+import MarkdownPreview, { GithubProfileTrophyPreview, GitHubStatsPreview, SkillsPreview, SocialPreview, SubTitlePreview, TitlePreview, TopLanguagesPreview, TwitterBadgePreview, VisitorsBadgePreview, WorkPreview, SectionTitle, DisplayWork, DisplaySocial } from '../markdownPreview';
 
 configure({ adapter: new Adapter() });
 
@@ -243,24 +229,12 @@ describe('DisplayWork Preview', () => {
 describe('DisplaySocial Preview', () => {
   it('renders correctly', () => {
     let social = DEFAULT_SOCIAL;
-    const tree = shallow(
-      <DisplaySocial
-        base="https://codepen.io"
-        icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
-        username={social.codepen}
-      />
-    );
+    const tree = shallow(<DisplaySocial base="https://codepen.io" icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg" username={social.codepen} />);
 
     expect(tree).toMatchSnapshot();
   });
   it('renders correctly with no username', () => {
-    const tree = shallow(
-      <DisplaySocial
-        base="https://codepen.io"
-        icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"
-        username={''}
-      />
-    );
+    const tree = shallow(<DisplaySocial base="https://codepen.io" icon="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg" username={''} />);
 
     expect(tree).toMatchSnapshot();
   });
@@ -278,7 +252,7 @@ describe('VisitorsBadge Preview', () => {
           badgeColor: data.badgeColor,
           badgeStyle: data.badgeStyle,
         }}
-      />
+      />,
     );
 
     expect(tree).toMatchSnapshot();
@@ -295,7 +269,7 @@ describe('VisitorsBadge Preview', () => {
           badgeColor: data.badgeColor,
           badgeStyle: data.badgeStyle,
         }}
-      />
+      />,
     );
 
     expect(tree).toMatchSnapshot();
@@ -370,9 +344,7 @@ describe('TopLanguages Preview', () => {
   it('renders correctly', () => {
     let data = DEFAULT_DATA;
     let social = DEFAULT_SOCIAL;
-    const tree = shallow(
-      <TopLanguagesPreview show={data.topLanguages} github={social.github} options={data.topLanguagesOptions} />
-    );
+    const tree = shallow(<TopLanguagesPreview show={data.topLanguages} github={social.github} options={data.topLanguagesOptions} />);
 
     expect(tree).toMatchSnapshot();
   });
@@ -388,9 +360,7 @@ describe('GitHubStats Preview', () => {
   it('renders correctly', () => {
     let data = DEFAULT_DATA;
     let social = DEFAULT_SOCIAL;
-    const tree = shallow(
-      <GitHubStatsPreview show={data.githubStats} github={social.github} options={data.githubStatsOptions} />
-    );
+    const tree = shallow(<GitHubStatsPreview show={data.githubStats} github={social.github} options={data.githubStatsOptions} />);
 
     expect(tree).toMatchSnapshot();
   });

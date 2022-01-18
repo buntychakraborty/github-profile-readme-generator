@@ -85,14 +85,7 @@ describe('Addons', () => {
   });
 
   it('renders correctly', () => {
-    const addOnComponent = shallow(
-      <Addons
-        data={dataInput}
-        social={socialInput}
-        handleCheckChange={mockHandleCheckChange}
-        handleDataChange={mockHandleDataChange}
-      />
-    );
+    const addOnComponent = shallow(<Addons data={dataInput} social={socialInput} handleCheckChange={mockHandleCheckChange} handleDataChange={mockHandleDataChange} />);
 
     expect(toJson(addOnComponent)).toMatchSnapshot();
   });
@@ -107,14 +100,7 @@ describe('Addons', () => {
       medium: '@abcd',
     };
 
-    const addOnComponent = mount(
-      <Addons
-        data={newDataInput}
-        social={newSocialInput}
-        handleCheckChange={mockHandleCheckChange}
-        handleDataChange={mockHandleDataChange}
-      />
-    );
+    const addOnComponent = mount(<Addons data={newDataInput} social={newSocialInput} handleCheckChange={mockHandleCheckChange} handleDataChange={mockHandleDataChange} />);
 
     addOnComponent.find('#visitors-count-open-btn').simulate('click', {});
 
@@ -141,14 +127,7 @@ describe('Addons', () => {
       medium: '@abcd',
     };
 
-    const addOnComponent = mount(
-      <Addons
-        data={newDataInput}
-        social={newSocialInput}
-        handleCheckChange={mockHandleCheckChange}
-        handleDataChange={mockHandleDataChange}
-      />
-    );
+    const addOnComponent = mount(<Addons data={newDataInput} social={newSocialInput} handleCheckChange={mockHandleCheckChange} handleDataChange={mockHandleDataChange} />);
 
     addOnComponent.find('#visitors-count-open-btn').simulate('click', {});
     addOnComponent.find('#badge-style').simulate('change', mockEvent);
@@ -170,14 +149,7 @@ describe('Addons', () => {
       medium: '@abcd',
     };
 
-    const addOnComponent = mount(
-      <Addons
-        data={newDataInput}
-        social={newSocialInput}
-        handleCheckChange={mockHandleCheckChange}
-        handleDataChange={mockHandleDataChange}
-      />
-    );
+    const addOnComponent = mount(<Addons data={newDataInput} social={newSocialInput} handleCheckChange={mockHandleCheckChange} handleDataChange={mockHandleDataChange} />);
 
     addOnComponent.find('#visitors-count-open-btn').simulate('click', {});
     addOnComponent.find('#badge-color').simulate('change', mockEvent);
@@ -199,14 +171,7 @@ describe('Addons', () => {
       medium: '@abcd',
     };
 
-    const addOnComponent = mount(
-      <Addons
-        data={newDataInput}
-        social={newSocialInput}
-        handleCheckChange={mockHandleCheckChange}
-        handleDataChange={mockHandleDataChange}
-      />
-    );
+    const addOnComponent = mount(<Addons data={newDataInput} social={newSocialInput} handleCheckChange={mockHandleCheckChange} handleDataChange={mockHandleDataChange} />);
 
     addOnComponent.find('#visitors-count-open-btn').simulate('click', {});
     addOnComponent.find('#badge-label-text').simulate('change', mockEvent);
@@ -227,14 +192,7 @@ describe('Addons', () => {
       medium: '@abcd',
     };
 
-    const addOnComponent = mount(
-      <Addons
-        data={newDataInput}
-        social={newSocialInput}
-        handleCheckChange={mockHandleCheckChange}
-        handleDataChange={mockHandleDataChange}
-      />
-    );
+    const addOnComponent = mount(<Addons data={newDataInput} social={newSocialInput} handleCheckChange={mockHandleCheckChange} handleDataChange={mockHandleDataChange} />);
 
     addOnComponent.find('#github-stats-open-btn').simulate('click', {});
 
@@ -261,14 +219,7 @@ describe('Addons', () => {
       medium: '@abcd',
     };
 
-    const addOnComponent = mount(
-      <Addons
-        data={newDataInput}
-        social={newSocialInput}
-        handleCheckChange={mockHandleCheckChange}
-        handleDataChange={mockHandleDataChange}
-      />
-    );
+    const addOnComponent = mount(<Addons data={newDataInput} social={newSocialInput} handleCheckChange={mockHandleCheckChange} handleDataChange={mockHandleDataChange} />);
 
     addOnComponent.find('#github-stats-open-btn').simulate('click', {});
     addOnComponent.find('#stats-theme').simulate('change', mockEvent);
@@ -312,14 +263,7 @@ describe('Addons', () => {
       medium: '@abcd',
     };
 
-    const addOnComponent = mount(
-      <Addons
-        data={newDataInput}
-        social={newSocialInput}
-        handleCheckChange={mockHandleCheckChange}
-        handleDataChange={mockHandleDataChange}
-      />
-    );
+    const addOnComponent = mount(<Addons data={newDataInput} social={newSocialInput} handleCheckChange={mockHandleCheckChange} handleDataChange={mockHandleDataChange} />);
 
     addOnComponent.find('#github-stats-open-btn').simulate('click', {});
     addOnComponent.find('#stats-title-color').simulate('change', mockEvent);
@@ -363,14 +307,7 @@ describe('Addons', () => {
       medium: '@abcd',
     };
 
-    const addOnComponent = mount(
-      <Addons
-        data={newDataInput}
-        social={newSocialInput}
-        handleCheckChange={mockHandleCheckChange}
-        handleDataChange={mockHandleDataChange}
-      />
-    );
+    const addOnComponent = mount(<Addons data={newDataInput} social={newSocialInput} handleCheckChange={mockHandleCheckChange} handleDataChange={mockHandleDataChange} />);
 
     addOnComponent.find('#github-stats-open-btn').simulate('click', {});
     addOnComponent.find('#stats-bg-color').simulate('change', mockEvent);
@@ -415,14 +352,7 @@ describe('Addons', () => {
       medium: '@abcd',
     };
 
-    const addOnComponent = mount(
-      <Addons
-        data={newDataInput}
-        social={newSocialInput}
-        handleCheckChange={mockHandleCheckChange}
-        handleDataChange={mockHandleDataChange}
-      />
-    );
+    const addOnComponent = mount(<Addons data={newDataInput} social={newSocialInput} handleCheckChange={mockHandleCheckChange} handleDataChange={mockHandleDataChange} />);
 
     addOnComponent.find('#github-stats-open-btn').simulate('click', {});
     addOnComponent.find('#stats-cache-seconds').simulate('change', mockEvent);
@@ -466,14 +396,7 @@ describe('Addons', () => {
       medium: '@abcd',
     };
 
-    const addOnComponent = mount(
-      <Addons
-        data={newDataInput}
-        social={newSocialInput}
-        handleCheckChange={mockHandleCheckChange}
-        handleDataChange={mockHandleDataChange}
-      />
-    );
+    const addOnComponent = mount(<Addons data={newDataInput} social={newSocialInput} handleCheckChange={mockHandleCheckChange} handleDataChange={mockHandleDataChange} />);
 
     addOnComponent.find('#github-stats-open-btn').simulate('click', {});
     addOnComponent.find('#stats-text-color').simulate('change', mockEvent);
@@ -518,14 +441,7 @@ describe('Addons', () => {
       medium: '@abcd',
     };
 
-    const addOnComponent = mount(
-      <Addons
-        data={newDataInput}
-        social={newSocialInput}
-        handleCheckChange={mockHandleCheckChange}
-        handleDataChange={mockHandleDataChange}
-      />
-    );
+    const addOnComponent = mount(<Addons data={newDataInput} social={newSocialInput} handleCheckChange={mockHandleCheckChange} handleDataChange={mockHandleDataChange} />);
 
     addOnComponent.find('#github-stats-open-btn').simulate('click', {});
     addOnComponent.find('#stats-locale').simulate('change', mockEvent);
@@ -570,14 +486,7 @@ describe('Addons', () => {
       medium: '@abcd',
     };
 
-    const addOnComponent = mount(
-      <Addons
-        data={newDataInput}
-        social={newSocialInput}
-        handleCheckChange={mockHandleCheckChange}
-        handleDataChange={mockHandleDataChange}
-      />
-    );
+    const addOnComponent = mount(<Addons data={newDataInput} social={newSocialInput} handleCheckChange={mockHandleCheckChange} handleDataChange={mockHandleDataChange} />);
 
     addOnComponent.find('#github-stats-open-btn').simulate('click', {});
     addOnComponent.find('#stats-hide-border').simulate('change', mockEvent);
@@ -611,14 +520,7 @@ describe('Addons', () => {
       medium: '@abcd',
     };
 
-    const addOnComponent = mount(
-      <Addons
-        data={newDataInput}
-        social={newSocialInput}
-        handleCheckChange={mockHandleCheckChange}
-        handleDataChange={mockHandleDataChange}
-      />
-    );
+    const addOnComponent = mount(<Addons data={newDataInput} social={newSocialInput} handleCheckChange={mockHandleCheckChange} handleDataChange={mockHandleDataChange} />);
 
     addOnComponent.find('#top-languages-open-btn').simulate('click', {});
 
@@ -646,14 +548,7 @@ describe('Addons', () => {
       medium: '@abcd',
     };
 
-    const addOnComponent = mount(
-      <Addons
-        data={newDataInput}
-        social={newSocialInput}
-        handleCheckChange={mockHandleCheckChange}
-        handleDataChange={mockHandleDataChange}
-      />
-    );
+    const addOnComponent = mount(<Addons data={newDataInput} social={newSocialInput} handleCheckChange={mockHandleCheckChange} handleDataChange={mockHandleDataChange} />);
 
     addOnComponent.find('#top-languages-open-btn').simulate('click', {});
     addOnComponent.find('#top-lang-theme').simulate('change', mockEvent);
@@ -680,14 +575,7 @@ describe('Addons', () => {
   it('should handle check change when add on item inputs are changed', () => {
     const mockEvent = { target: { value: 'This is a mock event' } };
 
-    const addOnComponent = mount(
-      <Addons
-        data={dataInput}
-        social={socialInput}
-        handleCheckChange={mockHandleCheckChange}
-        handleDataChange={mockHandleDataChange}
-      />
-    );
+    const addOnComponent = mount(<Addons data={dataInput} social={socialInput} handleCheckChange={mockHandleCheckChange} handleDataChange={mockHandleDataChange} />);
 
     addOnComponent.find('#visitors-count').simulate('change', mockEvent);
     addOnComponent.find('#github-profile-trophy').simulate('change', mockEvent);
@@ -719,14 +607,7 @@ describe('Addons', () => {
       dev: 'some-value-123',
     };
 
-    const addOnComponent = shallow(
-      <Addons
-        data={newDataInput}
-        social={newSocialInput}
-        handleCheckChange={mockHandleCheckChange}
-        handleDataChange={mockHandleDataChange}
-      />
-    );
+    const addOnComponent = shallow(<Addons data={newDataInput} social={newSocialInput} handleCheckChange={mockHandleCheckChange} handleDataChange={mockHandleDataChange} />);
 
     const workflowElement = addOnComponent.find('.workflow');
     expect(workflowElement).toMatchSnapshot();
@@ -742,14 +623,7 @@ describe('Addons', () => {
       rssurl: 'url-random',
     };
 
-    const addOnComponent = shallow(
-      <Addons
-        data={newDataInput}
-        social={newSocialInput}
-        handleCheckChange={mockHandleCheckChange}
-        handleDataChange={mockHandleDataChange}
-      />
-    );
+    const addOnComponent = shallow(<Addons data={newDataInput} social={newSocialInput} handleCheckChange={mockHandleCheckChange} handleDataChange={mockHandleDataChange} />);
 
     const workflowElement = addOnComponent.find('.workflow');
     expect(workflowElement).toMatchSnapshot();
@@ -765,14 +639,7 @@ describe('Addons', () => {
       medium: '@abcd',
     };
 
-    const addOnComponent = shallow(
-      <Addons
-        data={newDataInput}
-        social={newSocialInput}
-        handleCheckChange={mockHandleCheckChange}
-        handleDataChange={mockHandleDataChange}
-      />
-    );
+    const addOnComponent = shallow(<Addons data={newDataInput} social={newSocialInput} handleCheckChange={mockHandleCheckChange} handleDataChange={mockHandleDataChange} />);
 
     const workflowElement = addOnComponent.find('.workflow');
     expect(workflowElement).toMatchSnapshot();
@@ -791,14 +658,7 @@ describe('Addons', () => {
       medium: '@abcd',
     };
 
-    const addOnComponent = shallow(
-      <Addons
-        data={newDataInput}
-        social={newSocialInput}
-        handleCheckChange={mockHandleCheckChange}
-        handleDataChange={mockHandleDataChange}
-      />
-    );
+    const addOnComponent = shallow(<Addons data={newDataInput} social={newSocialInput} handleCheckChange={mockHandleCheckChange} handleDataChange={mockHandleDataChange} />);
 
     addOnComponent.find('#blog-post-worklow-span').simulate('click', {});
     expect(document.createElement).toHaveBeenCalledTimes(1);

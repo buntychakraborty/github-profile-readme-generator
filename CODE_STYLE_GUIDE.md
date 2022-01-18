@@ -15,48 +15,52 @@
 
 ## Spacing
 
-1. **JS:**
-   - Use a space after `if`, `for`, `while`, `switch`.
-   - Do not use a space after the opening `(` and before the closing `)`.
-   - Use a space before and after destructuring objects.
-   ```js
-   //good
-   const { apple, mangoes } = fruits;
+1.  **JS:**
 
-   //bad
-   const { apple, mangoes } = fruits;
-   ```
+    - Use a space after `if`, `for`, `while`, `switch`.
+    - Do not use a space after the opening `(` and before the closing `)`.
+    - Use a space before and after destructuring objects.
 
+    ```js
+    //good
+    const { apple, mangoes } = fruits;
 
-        //Same for destructuring props:
-        //good
-        const BeautifulComponent = ({ prop1, prop2 }) => {}
-
-        //bad
-        const UglyComponent = ({prop1, prop2}) => {}
+    //bad
+    const { apple, mangoes } = fruits;
     ```
 
-2. **JSX:**
+         //Same for destructuring props:
+         //good
+         const BeautifulComponent = ({ prop1, prop2 }) => {}
 
-   - Use a space before the forward slash (`/`) of a self-closing tag
+         //bad
+         const UglyComponent = ({prop1, prop2}) => {}
 
-   ```js
-   //good
-   <Foo />
+    ```
 
-   //bad
-   <Foo/>
-   ```
+    ```
 
-   - Do **not** use spaces for JSX curly braces
+2.  **JSX:**
 
-   ```js
-   //good
-   <Foo bar={baz} />
+    - Use a space before the forward slash (`/`) of a self-closing tag
 
-   //bad
-   <Foo bar={ baz } />
-   ```
+    ```js
+    //good
+    <Foo />
+
+    //bad
+    <Foo/>
+    ```
+
+    - Do **not** use spaces for JSX curly braces
+
+    ```js
+    //good
+    <Foo bar={baz} />
+
+    //bad
+    <Foo bar={ baz } />
+    ```
 
 ## **Props:**
 
